@@ -22,7 +22,7 @@ html body {
 
 
 .cvku {
-    width: 90%;
+    max-width: 90%;
     height: 100%;
     background-color: rgb(236, 236, 236);
     box-shadow: 0px 20px 20px 0px rgb(0, 0, 0);
@@ -33,8 +33,8 @@ html body {
 #pict {
     margin-left: 8%;
     margin-top: 5%;
-    width: 84%;
-    height: 180px;
+    max-width: 60rem;
+    max-height: 180px;
     background-color: rgb(113, 113, 113);
     
     
@@ -46,15 +46,15 @@ html body {
 
 #line {
     margin-top: 2%;
-    width: 80%;
+    max-width: 80%;
     border-bottom: solid 5px rgb(26, 26, 26);
 }
 
 .nama {
-    width: 100px;
+    max-width: 5rem;
     float: right;
-    margin-top: -17.5%;
-    margin-right: 50%;
+    margin-top: -12.5rem;
+    margin-right: 35rem;
     font-size: 35px;
     line-height: 77px;
     font-family: 'Josefin Sans', sans-serif;
@@ -65,7 +65,7 @@ html body {
 }
 
 #title {
-    width: 300px;
+    max-width: 300px;
     height: 50px;
     color: rgb(0, 0, 0);
     margin-top: 10%;
@@ -87,7 +87,7 @@ html body {
 
 .deskripsi {
     width: 85%;
-    height: 1000px;
+    height: 180vh;
     background-color: aliceblue;
     margin-left: 5%;
     margin-top: 10%;
@@ -100,12 +100,12 @@ html body {
 }
 
 .deskripsi img{
-    width: 50px;
+    max-width: 50px;
     height: 50px;
 }
 
 .deskripsi p{
-    font-size: 18px;
+    font-size: 3vh;
 }
 
 
@@ -120,8 +120,8 @@ html body {
 }
 
 #profil {
-    padding: 10px;
-    width: 400px;
+    padding: 1em;
+    max-width: 400px;
 }
 
 #edukasi img{
@@ -132,10 +132,9 @@ html body {
 #edukasi {
     margin-top: 40px;
     padding: 10px;
-    width: 420px;
+    max-width: 420px;
     height: 300px;
     line-height: 10px;
-    background-color: aliceblue;
 }
 
 #edukasi h2 {
@@ -149,15 +148,11 @@ html body {
 
 #contact ul li {
     display: inline-block;
-    margin-left: 2%;
-    width: 250px;
+    margin-left: 5rem;
+    max-width: 250px;
     height: 170px;
     text-align: center;
     
-}
-
-#contact ul {
-    margin-left: -3%;
 }
 
 
@@ -180,50 +175,66 @@ html body {
 }
 
 #line3 {
-    height: 60%;
-    width: 1px;
+    min-height: 60%;
+    max-width: 1px;
     border-left: solid 4px black;
     float: right;
-    margin-top: -65%;
+    margin-top: -39rem;
     margin-right: 46.1%;
 }
 
 #pengalaman {
     float: right;
-    width: 370px;
-    margin-top: -78.4%;
-    margin-right: 9%;
+    max-width: 370px;
+    margin-top: -47rem;
+    margin-right: 5rem;
     
 }
 
 .list ul li {
-    margin-top: 10%;
+    margin-top: 2rem;
     
 }
 
 .list ul li h1{
     font-size: 25px;
     color: rgb(26, 26, 100);
-    line-height: 10px;
+    line-height: 2rem;
 }
+
 
 /* For mobile phones*/
 
-@media only screen and (max-width: 768px){
+@media (max-width: 50em){
+    body {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding-left: 5%;
+        padding-right: 0%;
+        margin: 0%;
+        
+    }
+    
+    html body {
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+    
+    
     .cvku {
-        width: 90%;
+        max-width: 90%;
         height: 100%;
         background-color: rgb(236, 236, 236);
         box-shadow: 0px 20px 20px 0px rgb(0, 0, 0);
         border: solid black 5px;
         color: black;
     }
-
+    
     #pict {
-        margin-left: 8%;
-        margin-top: 5%;
-        width: 84%;
-        height: 55px;
+        margin-left: 3rem;
+        margin-top: 2rem;
+        max-width: 60rem;
+        max-height: 100px;
         background-color: rgb(113, 113, 113);
         
         
@@ -231,41 +242,51 @@ html body {
     
     #pict img {
         box-shadow: 0px 5px 5px 0px rgb(70, 70, 70);
-        width: 110px;
-        height: 110px;
+        max-width: 12rem;
+        max-height: 12rem;
     }
-
+    
+    #line {
+        margin-top: 2%;
+        max-width: 80%;
+        border-bottom: solid 5px rgb(26, 26, 26);
+    }
+    
     .nama {
-        width: 100px;
-        float: right;
-        margin-top: -19%;
-        margin-right: 28%;
-        font-size: 3vw;
-        line-height: 25px;
+        max-width: 5rem;
+        float: left;
+        margin-top: -8.5rem;
+        margin-left: 16rem;
+        font-size: 2.7vh;
+        line-height: 5.5vh;
         font-family: 'Josefin Sans', sans-serif;
     }
-
+    
+    .nama span {
+        color: rgb(222, 222, 222);
+    }
+    
     #title {
-        width: 150px;
-        height: 30px;
+        max-width: 300px;
+        height: 50px;
         color: rgb(0, 0, 0);
-        margin-top: 15%;
-        margin-left: 42%;
+        margin-top: 10%;
+        margin-left: 43%;
         font-family: 'Mulish', sans-serif;
         
     }
     
     #title h2{
-        font-size: 2vw;
-        line-height: 15px;
+        font-size: 1.5vh;
+        line-height: 47px;
     }
-
+    
     #line2 {
-        width: 100%;
+        width: 94%;
         border-bottom: solid 5px rgb(26, 26, 26);   
         margin-top: 5%;
     }
-
+    
     .deskripsi {
         width: 85%;
         height: 100%;
@@ -280,195 +301,102 @@ html body {
         box-shadow: 0px 9px 9px 0px grey;
     }
     
-    #profil {
-        padding: 10px;
-        width: 260px;
+    .deskripsi img{
+        max-width: 50px;
+        height: 50px;
     }
-
+    
+    .deskripsi p{
+        font-size: 3vh;
+    }
+    
+    
+    .deskripsi h1{
+            font-family: 'Teko', sans-serif;
+            font-weight: 900;
+            letter-spacing: 1px;
+            padding-bottom: 10px;
+            color: rgb(0, 0, 58);
+            font-size: 37px;
+        
+    }
+    
+    #profil {
+        padding: 1em;
+        max-width: 500px;
+    }
+    
+    #edukasi img{
+        width: 70px;
+        height: 70px;
+    }
+    
     #edukasi {
         margin-top: 40px;
         padding: 10px;
-        width: 200px;
-        height: 100%;
-        line-height: 30px;
-       
+        max-width: 500px;
+        height: 300px;
+        line-height: 10px;
+    }
+    
+    #edukasi h2 {
         
+        font-weight: bold;
+        letter-spacing: 0px;
+        padding-bottom: 10px;
+        font-family: 'Work Sans', sans-serif;
+        letter-spacing: 1px;
     }
 
+    #contact ul li {
+        display: block;
+        max-width: 300px;
+        max-height: 25rem;
+        margin-left: 1rem;
+    }
+    
+    
+    #contact ul li p{
+        font-size: 18px;
+    }
+    
+    #contact ul li a img {
+        transition: 0.7s;
+    }
+    
+    #contact ul li a img:hover{
+        transform: scale(1.5);
+        transition: 0.7s;
+    }
+    
+    #contact ul li img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    #line3 {
+        min-height: 0%;
+      
+    }
+    
     #pengalaman {
-        margin-top: 40px;
-        padding: 10px;
-        width: 240px;
-        height: 100%;
-        line-height: 30px;
+        max-width: 500px;
+        margin-top: 4rem;
+        margin-right: 5rem;
+        float: none;
         
     }
-
-    #pengalaman ul li h1{
-        line-height: 30px;
-    }
-
+    
     .list ul li {
-        margin-top: 0%;
+        margin-top: 2rem;
         
     }
     
     .list ul li h1{
         font-size: 25px;
         color: rgb(26, 26, 100);
-        line-height: 10px;
-    }
-
-    #line3 {
-        height: 0%;
-        width: 0px;
-        border-left: solid 4px black;
+        line-height: 2rem;
     }
     
-    #line2 {
-        width: 0%;
-        border-bottom: solid 5px rgb(26, 26, 26);   
-        margin-top: 0%;
-    }
-    
-    html body {
-        overflow-x: hidden;
-    }
-
-    #contact ul {
-        margin-left: -10%;
-    }
-    
-}
-
-@media only screen and (max-width: 375px){
-    .cvku {
-        width: 90%;
-        height: 100%;
-        background-color: rgb(236, 236, 236);
-        box-shadow: 0px 20px 20px 0px rgb(0, 0, 0);
-        border: solid black 5px;
-        color: black;
-    }
-
-    #pict {
-        margin-left: 8%;
-        margin-top: 5%;
-        width: 84%;
-        height: 80px;
-        background-color: rgb(113, 113, 113);
-        
-        
-    }
-    
-    #pict img {
-        box-shadow: 0px 5px 5px 0px rgb(70, 70, 70);
-        width: 150px;
-        height: 150px;
-    }
-
-    .nama {
-        width: 100px;
-        float: right;
-        margin-top: -24%;
-        margin-right: 21%;
-        font-size: 3vw;
-        line-height: 35px;
-        font-family: 'Josefin Sans', sans-serif;
-    }
-
-    #title {
-        width: 150px;
-        height: 30px;
-        color: rgb(0, 0, 0);
-        margin-top: 18%;
-        margin-left: 51%;
-        font-family: 'Mulish', sans-serif;
-        
-    }
-    
-    #title h2{
-        font-size: 2vw;
-        line-height: 15px;
-    }
-
-    #line2 {
-        width: 100%;
-        border-bottom: solid 5px rgb(26, 26, 26);   
-        margin-top: 5%;
-    }
-
-    .deskripsi {
-        width: 85%;
-        height: 100%;
-        background-color: aliceblue;
-        margin-left: 5%;
-        margin-top: 10%;
-        padding-left: 5%;
-        padding-top: 3%;
-        margin-bottom: 10%;
-        font-family: 'Jost', sans-serif;
-        color: black;
-        box-shadow: 0px 9px 9px 0px grey;
-    }
-    
-    #profil {
-        padding: 10px;
-        width: 300px;
-    }
-
-    #edukasi {
-        margin-top: 40px;
-        padding: 10px;
-        width: 200px;
-        height: 100%;
-        line-height: 30px;
-       
-        
-    }
-
-    #pengalaman {
-        margin-top: 40px;
-        padding: 10px;
-        width: 250px;
-        height: 100%;
-        line-height: 30px;
-        
-    }
-
-    #pengalaman ul li h1{
-        line-height: 30px;
-    }
-
-    .list ul li {
-        margin-top: 0%;
-        
-    }
-    
-    .list ul li h1{
-        font-size: 25px;
-        color: rgb(26, 26, 100);
-        line-height: 10px;
-    }
-
-    #line3 {
-        height: 0%;
-        width: 0px;
-        border-left: solid 4px black;
-    }
-    
-    #line2 {
-        width: 0%;
-        border-bottom: solid 5px rgb(26, 26, 26);   
-        margin-top: 0%;
-    }
-    
-    html body {
-        overflow-x: hidden;
-    }
-
-    #contact ul {
-        margin-left: -10%;
-    }
-
+   
 }

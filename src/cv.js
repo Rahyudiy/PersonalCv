@@ -15,7 +15,7 @@ function Cvku() {
         <div id="pict">
             <img src={Foto} className="Profile"></img>
                 <div id="line"></div>
-            </div>
+        </div>
 
             <div class="nama">
                 <h1><span>Gde Ngurah </span>Yudiantara</h1>
